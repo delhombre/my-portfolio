@@ -1,16 +1,23 @@
-html,
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	font-family: "Inter", sans-serif;
+	--res: calc(0.01 * 10vmin);
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-size: 1.2rem;
+	font-family: inherit;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+	color: inherit;
+	text-decoration: none;
 }
